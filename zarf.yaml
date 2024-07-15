@@ -1,0 +1,16 @@
+kind: ZarfPackageConfig
+metadata:
+  name: my-package
+  version: 1.0.0
+  description: My package description
+
+components:
+  - name: minio
+    required: true
+    charts:
+      - name: minio
+        version: 8.0.10
+        namespace: data
+        url: https://helm.min.io/
+        valuesFiles:
+          - values.yaml

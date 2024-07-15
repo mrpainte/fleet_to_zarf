@@ -1,0 +1,9 @@
+defaultNamespace: data
+
+helm:
+  chart: minio
+  version: 8.0.10
+  repo: https://helm.min.io/
+  valuesFiles:
+    - values.yaml
+    
